@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Union County Ordinances Filter</title>
+    <style>
+        #form-box {
+            align-items: center;
+            background-color: #022744;
+            color: white;
+            display: flex;
+            font-family: inherit;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        #ordinancesCollection {
+            margin: 10px;
+        }
+
+        #ordinance-list>div {
+            background-color: white;
+            border-top: 4px solid #CAAB5B;
+            padding: 15px 20px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form-box">
+        <h1>Union County Ordinance Compilation</h1>
+        <label for="taxonomies">
+            Filter Ordinances by:
+        </label>
+        <br />
+        <select name="taxonomies" id="ordinancesCollection">
+            <option value="">--Please choose an option--</option>
+        </select>
+    </form>
+
+    <div id="ordinance-list">
+
+    </div>
+</body>
+<script src="/app.js"></script>
+
+</html>
